@@ -10,6 +10,10 @@ variable "name"{
     type=string
 }
 
+variable "sg_names"{
+    type=list
+}
+
 variable "description"{
     type=string
 }

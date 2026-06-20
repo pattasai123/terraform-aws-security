@@ -1,5 +1,6 @@
 resource "aws_security_group" "main"{
-  name        = var.name
+  count=length(var.sg_names)
+  name        = var.sg_names[count.index]
   description = var.description
   vpc_id      = var.vpc_id
 
