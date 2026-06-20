@@ -11,7 +11,7 @@ variable "name"{
 }
 
 variable "sg_names"{
-    type=list
+    type=string
 }
 
 variable "description"{
